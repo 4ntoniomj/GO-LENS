@@ -8,3 +8,10 @@ services:
       - "80:80"
     container_name: nginx-proxy-go
     restart: always
+
+  go.server:
+    image: golang:1.25.0-alpine3.22
+    working_dir: /app
+    volumes:
+      - ./server:/app
+    container_name: golang-server
