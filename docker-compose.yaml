@@ -15,3 +15,10 @@ services:
     volumes:
       - ./server:/app
     container_name: golang-server
+
+  go.agent:
+    image: golang:1.25.0-alpine3.22
+    working_dir: /app
+    volumes:
+      - ./agent:/app
+    container_name: golang-agent
