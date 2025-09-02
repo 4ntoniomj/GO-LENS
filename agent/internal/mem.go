@@ -37,5 +37,5 @@ func Mem_show() {
 		Memused: tems[1],
 		Mempor: porce,
 	}
-	fmt.Printf("Total Mem: %v MB\nFree Mem: %v MB\nPorcentage: %.2f%%", Output.Mem, Output.Memused, Output.Mempor)
+	fmt.Printf("Total Mem: %v MB\nFree Mem: %v MB\nPorcentage: %.2f%%\n", Output.Mem, Output.Memused, Output.Mempor)
 }

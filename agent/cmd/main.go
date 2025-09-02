@@ -6,4 +6,5 @@ import (
 
 func main() {
 	internal.Mem_show()
+	internal.ShowCpu()
 }
